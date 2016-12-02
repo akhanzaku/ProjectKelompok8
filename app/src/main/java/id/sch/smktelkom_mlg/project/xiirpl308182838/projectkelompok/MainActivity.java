@@ -1,9 +1,12 @@
 package id.sch.smktelkom_mlg.project.xiirpl308182838.projectkelompok;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -15,7 +18,9 @@ import java.util.concurrent.TimeUnit;
 
 
 public class MainActivity extends Activity {
+
     public static int oneTimeOnly = 0;
+    public boolean isFirstStart;
     private Button b1, b2, b3, b4;
     private ImageView iv;
     private MediaPlayer mediaPlayer;
@@ -42,8 +47,42 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //  Declare a new thread to do a preference check
+        Thread t = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                //  Initialize SharedPreferences
+                SharedPreferences getPrefs = PreferenceManager
+                        .getDefaultSharedPreferences(getBaseContext());
+
+                //  Create a new boolean and preference and set it to true
+                isFirstStart = getPrefs.getBoolean("firstStart", true);
+
+                //  If the activity has never started before...
+                if (isFirstStart) {
+
+                    //  Launch app intro
+                    Intent i = new Intent(MainActivity.this, MyIntro.class);
+                    startActivity(i);
+
+                    //  Make a new preferences editor
+                    SharedPreferences.Editor e = getPrefs.edit();
+
+                    //  Edit preference to make it false because we don't want this to run again
+                    e.putBoolean("firstStart", false);
+
+                    //  Apply changes
+                    e.apply();
+                }
+            }
+        });
+
+// Start the thread
+        t.start();
 
         b1 = (Button) findViewById(R.id.button);
         b2 = (Button) findViewById(R.id.button2);
@@ -54,7 +93,7 @@ public class MainActivity extends Activity {
         tx1 = (TextView) findViewById(R.id.textView2);
         tx2 = (TextView) findViewById(R.id.textView3);
         tx3 = (TextView) findViewById(R.id.textView4);
-        tx3.setText("Song.mp3");
+        tx3.setText("HEHE");
 
         mediaPlayer = MediaPlayer.create(this, R.raw.song);
         seekbar = (SeekBar) findViewById(R.id.seekBar);
