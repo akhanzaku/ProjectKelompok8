@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ProjectKelompokFIX.iml" filepath="$PROJECT_DIR$/ProjectKelompokFIX.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ProjectKelompokMusicPlayer(FIX).iml" filepath="$PROJECT_DIR$/ProjectKelompokMusicPlayer(FIX).iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProjectKelompok2(IKI PALING FIX).iml" filepath="$PROJECT_DIR$/ProjectKelompok2(IKI PALING FIX).iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
