@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="10"
-    android:background="#222222"
+    android:background="#cccc99"
     android:orientation="vertical">
 
     <TextView
@@ -16,9 +16,9 @@
         android:gravity="center"
         android:paddingLeft="32dp"
         android:paddingRight="32dp"
-        android:text="Musique"
-        android:textColor="#ffffff"
-        android:textSize="28sp" />
+        android:text="WELCOME"
+        android:textColor="#000"
+        android:textSize="32sp" />
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -33,7 +33,7 @@
             android:layout_gravity="center"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
-            android:src="@drawable/logo" />
+            android:src="@drawable/intro1" />
     </LinearLayout>
 
     <TextView
@@ -41,12 +41,14 @@
         android:layout_height="0dp"
         android:layout_gravity="center"
         android:layout_weight="3"
+        android:fontFamily="sans-serif-thin"
         android:gravity="center"
         android:paddingLeft="64dp"
         android:paddingRight="64dp"
-        android:text="Dicoba"
-        android:textColor="#ffffff"
-        android:textSize="16sp" />
+        android:text="De' Strelizzer adalah aplikasi yang membantumu untuk mencari relaksasi dalam pikiranmu"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="fill_parent"

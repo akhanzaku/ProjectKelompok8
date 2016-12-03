@@ -66,7 +66,7 @@ public class MainActivity extends Activity {
                 if (isFirstStart) {
 
                     //  Launch app intro
-                    Intent i = new Intent(MainActivity.this, MyIntro.class);
+                    Intent i = new Intent(MainActivity.this, MainActivityRecycler.MyIntro.class);
                     startActivity(i);
 
                     //  Make a new preferences editor
