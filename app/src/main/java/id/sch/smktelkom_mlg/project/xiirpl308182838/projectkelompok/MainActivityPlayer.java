@@ -22,6 +22,7 @@ public class MainActivityPlayer extends AppCompatActivity {
     FetchSongs fs;
     ArrayList<File> mySongs;
     ProgressDialog dialog;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
