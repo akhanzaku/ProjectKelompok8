@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ProjectKelompok2(IKI PALING FIX).iml" filepath="$PROJECT_DIR$/ProjectKelompok2(IKI PALING FIX).iml" />
       <module fileurl="file://$PROJECT_DIR$/ProjectKelompokFIX.iml" filepath="$PROJECT_DIR$/ProjectKelompokFIX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProjectKelompokFIXXX.iml" filepath="$PROJECT_DIR$/ProjectKelompokFIXXX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
