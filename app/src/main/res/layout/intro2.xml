@@ -17,7 +17,7 @@
         android:gravity="center"
         android:paddingLeft="32dp"
         android:paddingRight="32dp"
-        android:text="Kukukakkiki"
+        android:text="TENANGKAN DAN EKSPRESIKAN DIRIMU!"
         android:textColor="#ffffff"
         android:textSize="28sp" />
 
@@ -45,7 +45,7 @@
         android:gravity="center"
         android:paddingLeft="64dp"
         android:paddingRight="64dp"
-        android:text="Dicoba"
+        android:text="Dengan menggunakan D'Strezzlizer ini anda bisa memilih lagu apa yang akan anda mainkan dan ekspresikan feeling anda!"
         android:textColor="#ffffff"
         android:textSize="16sp" />
 
